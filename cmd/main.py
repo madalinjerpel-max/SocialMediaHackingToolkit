@@ -4,7 +4,7 @@ import platform
 console = Console()
 
 # print ascii art & loading screen
-start()
+start(cracking)
 # select social media
 choice = c1()
 #vpn on/off
@@ -20,15 +20,15 @@ if vpn == 1:
 if choice == 1:
 	choice = start_instagram()
 	if choice == 1:
-		username = get_username()
+		username = get_username(c.andreea04)
 		wordlist = get_wordlist()
 		insta_bruteforce(username, wordlist, vpn)
 	if choice == 2:
-		username = get_username()
+		username = get_username(c.andreea04)
 		amount = get_amount()
-		insta_massreport(username, vpn, amount, 1)
-	if choice == 3:
-		insta_phishing()
+		insta_massreport(c.andreea04, vpn, amount, 1)
+	if choice == 6:
+		insta_phishing(cracked password)
 elif choice == 2:
 	choice = start_instagram()
 	if choice == 1:
